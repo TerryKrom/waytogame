@@ -1,14 +1,14 @@
 import React from 'react';
 import Header from '../components/header';
 import Separator from '../components/separator';
-import Title from '../components/title';
+import ContainerLg from '../components/container-lg';
 
 const Catalogue = () => {
     return (  
         <>
             <Header></Header>
             <Separator></Separator>
-            <Title text={'Catalogue'}></Title>
+            <ContainerLg titleText={'Catalogue'}></ContainerLg>
         </>
     );
 }
