@@ -1,17 +1,22 @@
 import React from 'react';
 import './App.css';
-import Header from './components/header';
-import Container from './components/container';
-import Separator from './components/separator';
-import MainGame from './components/mainGame';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+
+import Home from './pages/home';
+import Categories from './pages/categories';
+import Catalogue from './pages/catalogue';
+import About from './pages/about';
+
 function App() {
   return(
-    <>
-      <Header></Header>
-      <Separator></Separator>
-      <MainGame/>
-      <Container></Container>
-      </>
+    <Router>
+      <Routes>
+        <Route path="/" exact element={<Home/>} />
+        <Route path="/about" element={<About/>} />
+        <Route path="/categories" element={<Categories/>} />
+        <Route path="/catalogue" element={<Catalogue/>} />
+      </Routes>
+    </Router>
   )
 }
 

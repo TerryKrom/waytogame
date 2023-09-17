@@ -1,5 +1,6 @@
 import React from 'react';
-import './gameCard.css'
+import './gameCard.css';
+
 const GameCard = ({ game }) => {
     return (
         <div className="game-card">
@@ -10,7 +11,7 @@ const GameCard = ({ game }) => {
                     <p className='platform'>Platform: {game.platform}</p>
                     <p>Genre: {game.genre}</p>
                     <div className="center">
-                      <a href={game.game_url} className="center">Download</a>
+                      <a href={game.game_url} className="center" target='_blank'>Download</a>
                     </div>
                 </div>
             </div>

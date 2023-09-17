@@ -6,6 +6,7 @@ body {
   box-sizing: border-box;
   font-family: 'Outfit', sans-serif;
   background: #151d27;
+  color: #fff;
 }
 
 ::-webkit-scrollbar-thumb {
