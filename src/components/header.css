@@ -8,9 +8,16 @@
     position: fixed;
     z-index: 99;
 }
-/* *{
-  border: 1px solid #fff;
-} */
+
+@media only screen and (max-width: 600px){
+  .menu-links a{
+    font-size: .8rem;
+  }
+  .logo img{
+    width: 60px !important;
+  }
+}
+
 .menu-links a{
     margin: 20px;
     text-decoration: none;
@@ -18,12 +25,10 @@
 }
 
 .menu-links {
-    margin-right: 30px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 100%;
-    width: 200px;
 }
 
 .nav-menu img{

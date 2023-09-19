@@ -9,6 +9,10 @@ body {
   color: #fff;
 }
 
+*{
+  scroll-behavior: smooth;
+}
+
 ::-webkit-scrollbar-thumb {
   background-color: #004aac;
   border-radius: 5px;
