@@ -16,7 +16,7 @@
   .logo img{
     width: 60px !important;
   }
-  .menu-links a:active::after{
+  .menu-links a:visited::after{
     width: 100%;
   }
 }
