@@ -16,6 +16,9 @@
   .logo img{
     width: 60px !important;
   }
+  .menu-links a:active::after{
+    width: 100%;
+  }
 }
 
 .menu-links a{
