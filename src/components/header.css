@@ -16,9 +16,6 @@
   .logo img{
     width: 60px !important;
   }
-  .menu-links a:visited::after{
-    width: 100%;
-  }
 }
 
 .menu-links a{
@@ -45,23 +42,27 @@
   width: 100px;
 }
 
+.menu-links a {
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.2s ease;
+}
+
+.menu-links a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: width .3s;
+}
 
 @media only screen and (min-width: 600px){
-  .menu-links a {
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.2s ease;
-  }
-  
-  .menu-links a::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    background: #fff;
-    transition: width .3s;
-  }
   .menu-links a:hover::after{
     width: 100%;
   }
+}
+
+.active::after{
+  width: 100% !important;
 }
