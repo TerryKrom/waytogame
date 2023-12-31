@@ -6,9 +6,6 @@
     align-items: center;
     flex-direction: column;
     margin: 5px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size:auto;
     cursor: pointer;
     animation: appear 0.3s linear;
     position: relative;
@@ -21,7 +18,7 @@
 
 .card-text h2{
     font-weight: 300;
-    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
     font-size: 1.8rem;
 }
 
@@ -40,7 +37,7 @@
 
 .card a{
     text-decoration: none;
-    background-color: #151d27;
+    background-color: var(--secondary-color);
     color: #fff;
     text-align: center;
     width: 175px;

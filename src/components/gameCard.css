@@ -32,7 +32,7 @@
 
 .game-card a{
     text-decoration: none;
-    background-color: #004aac;
+    background-color: var(--dark-primary-color);
     color: #fff;
     text-align: center;
     width: 175px;

@@ -1,25 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500&display=swap');
 
-body {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Outfit', sans-serif;
-  background: #151d27;
+}
+
+:root{
+  --primary-color: #0040C1;
+  --dark-primary-color: #004aac;
+  --secondary-color: #151d27;
+}
+
+body {
+  background: var(--secondary-color);
   color: #fff;
 }
 
 *{
+  font-family: 'Outfit', sans-serif;
+}
+
+html{
   scroll-behavior: smooth;
 }
-
-::-webkit-scrollbar-thumb {
-  background-color: #004aac;
-  border-radius: 5px;
-}
-
-/* Estilos para a barra de rolagem */
-::-webkit-scrollbar {
-  width: 0.8rem;
-}
-

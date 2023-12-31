@@ -32,7 +32,7 @@ const GameContainer = ({ game }) => {
           <TailSpin
             height={80}
             width={80}
-            color="#004aac"
+            color="var(--dark-primary-color)"
             ariaLabel="tail-spin-loading"
             radius={1}
             wrapperStyle={{}}

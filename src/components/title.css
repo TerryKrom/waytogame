@@ -22,6 +22,6 @@
     width: 100%;
     height: 3px;
     border-radius: 15px;
-    background-color: #0040C1;
+    background-color: var(--primary-color);
     margin: 0px 20px;
 }

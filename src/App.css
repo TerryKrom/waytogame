@@ -1,0 +1,9 @@
+::-webkit-scrollbar-thumb {
+    background-color: var(--dark-primary-color);
+    border-radius: 5px;
+}
+
+/* Estilos para a barra de rolagem */
+::-webkit-scrollbar {
+    width: 0.8rem;
+}

@@ -26,12 +26,12 @@ const Card = ({ game }) => {
         <div className="atropos-rotate">
           <div className="atropos-inner">
             {imageLoaded ? (
-              <img src={game.thumbnail} data-atropos-offset="-5" shadowScale={1.25} alt='game Thumbnail'/>
+              <img src={game.thumbnail} data-atropos-offset="-5" shadowScale={0} alt='game Thumbnail'/>
             ) : (
               <SkeletonTheme height={200} width={300} />
             )}
             <div className="card-text text-over" data-atropos-offset="0">
-              <a href={game.game_url} className="center" target='_blank'>Download</a>
+              <a href={game.game_url} className="center" target='_blank' rel="noreferrer">Download</a>
             </div>
           </div>
         </div>

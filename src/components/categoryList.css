@@ -1,0 +1,30 @@
+.category-list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.category{
+    width: 10rem;
+    height: 3rem;
+    cursor: pointer;
+    border: none;
+}
+
+.category.active{
+    border: 2px solid var(--primary-color);
+}
+
+.result{
+    margin: 20px;
+}
+
+.result ul{
+    list-style: none;
+    /* display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; */
+}
