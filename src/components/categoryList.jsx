@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import fetchData from '../fetchApi';
 import './categoryList.css';
+import MiniCard from './miniCard';
 
 const CategoryList = () => {
     const [resourceType, setResourceType] = useState("action");
@@ -11,7 +12,7 @@ const CategoryList = () => {
         fetchData(`https://free-to-play-games-database.p.rapidapi.com/api/games?category=${resourceType}`)
             .then(result => {
                 setData(result);
-                console.log(result);
+                // console.log(result);
             })
             .catch(error => console.error('Error:', error));
     }, [resourceType]);
@@ -70,12 +71,15 @@ const CategoryList = () => {
             </div>
 
             <div className="result">
-                <ul>
-                    {limitedData.map((game, index) => (
-                        <li key={index}>{game.title}</li>
-                    ))}
-                </ul>
+                {limitedData.map((game, index) => (
+                    <MiniCard
+                        key={index}
+                        title={game.title}
+                        thumbnail={game.thumbnail}
+                    />
+                ))}
             </div>
+
         </>
     );
 }

@@ -1,0 +1,14 @@
+.mini-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #fff;
+    width: 300px;
+    height: 300px;
+    margin: 5px;
+}
+
+.mini-card img{
+    width: 100%;
+}

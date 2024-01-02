@@ -11,20 +11,26 @@
     height: 3rem;
     cursor: pointer;
     border: none;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 0.925rem;
 }
 
+/* 
+.category:hover{
+    background-color: var(--primary-color);
+} */
+
 .category.active{
-    border: 2px solid var(--primary-color);
+    background-color: var(--dark-primary-color);
 }
 
 .result{
     margin: 20px;
-}
-
-.result ul{
-    list-style: none;
-    /* display: flex;
-    justify-content: space-around;
+    display: flex;
     align-items: center;
-    flex-wrap: wrap; */
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
