@@ -2,23 +2,29 @@ import React, { useState, useEffect } from 'react';
 import fetchData from '../fetchApi';
 import './categoryList.css';
 import MiniCard from './miniCard';
+import { TailSpin } from 'react-loader-spinner';
+
 
 const CategoryList = () => {
     const [resourceType, setResourceType] = useState("action");
     const [data, setData] = useState([]);
     const [activeButton, setActiveButton] = useState("action"); // Novo estado para rastrear o botão ativo
+    const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
         fetchData(`https://free-to-play-games-database.p.rapidapi.com/api/games?category=${resourceType}`)
             .then(result => {
                 setData(result);
-                // console.log(result);
+                setTimeout(() => {
+                    setIsLoading(false)
+                }, 1500)
             })
             .catch(error => console.error('Error:', error));
     }, [resourceType]);
 
     const changeResourceType = (type) => {
         setResourceType(type);
+        setIsLoading(true);
         setActiveButton(type); // Atualize o botão ativo quando o tipo de recurso for alterado
     }
 
@@ -70,16 +76,31 @@ const CategoryList = () => {
                 </button>
             </div>
 
-            <div className="result">
-                {limitedData.map((game, index) => (
-                    <MiniCard
-                        key={index}
-                        title={game.title}
-                        thumbnail={game.thumbnail}
+            {isLoading ? (
+                // Se isLoading for verdadeiro, exibe o spinner de carregamento
+                <div align="center" className='loader-container'>
+                    <TailSpin
+                        height={80}
+                        width={80}
+                        color="var(--dark-primary-color)"
+                        ariaLabel="tail-spin-loading"
+                        radius={1}
+                        wrapperStyle={{}}
+                        wrapperClass=""
+                        visible={true}
                     />
-                ))}
-            </div>
+                </div>
+            ) : (
+                <div className="result">
+                    {limitedData.map((game, index) => (
+                        <MiniCard
+                            key={index}
+                            game={game}
+                        />
+                    ))}
+                </div>
 
+            )}
         </>
     );
 }

@@ -13,7 +13,7 @@
     border: none;
     margin: 5px;
     border-radius: 5px;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     color: #fff;
     font-size: 0.925rem;
 }
@@ -24,7 +24,7 @@
 } */
 
 .category.active{
-    background-color: var(--dark-primary-color);
+    border: 3px solid var(--primary-color);
 }
 
 .result{

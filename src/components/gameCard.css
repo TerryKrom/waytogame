@@ -37,9 +37,9 @@
     background-color: var(--dark-primary-color);
     color: #fff;
     text-align: center;
-    width: 175px;
-    border-radius: 10px;
-    height: 35px;
+    width: 12rem;
+    border-radius: 5px;
+    height: 2.25rem;
 }
 
 .center {
