@@ -7,7 +7,14 @@ const MiniCard = (props) => {
             <img src={props.game.thumbnail} alt="game image" />
             <div className="mini-card-body">
                 <h2>{props.game.title}</h2>
-                <p>{props.game.platform}</p>
+                <p>
+                    <span> Platform: </span>
+                    <span>{props.game.platform}</span>
+                </p>
+                <p>
+                    <span>Release date: </span>
+                    <span>{props.game.release_date}</span>
+                </p>
                 <a href={props.game.game_url}>See More</a>
             </div>
         </div>
