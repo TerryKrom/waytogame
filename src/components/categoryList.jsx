@@ -74,6 +74,24 @@ const CategoryList = () => {
                 >
                     Fantasy
                 </button>
+                <button
+                    className={`category ${activeButton === "strategy" ? "active" : ""}`}
+                    onClick={() => changeResourceType("strategy")}
+                >
+                    Strategy
+                </button>
+                <button
+                    className={`category ${activeButton === "moba" ? "active" : ""}`}
+                    onClick={() => changeResourceType("moba")}
+                >
+                    Moba
+                </button>
+                <button
+                    className={`category ${activeButton === "survival" ? "active" : ""}`}
+                    onClick={() => changeResourceType("survival")}
+                >
+                    Survival
+                </button>
             </div>
 
             {isLoading ? (
