@@ -11,6 +11,10 @@
     position: relative;
 }
 
+.card *{
+    border-radius: 5px;
+}
+
 .card img{
     width: 100%;
     height: 100%;

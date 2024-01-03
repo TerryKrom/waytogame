@@ -19,8 +19,16 @@
 }
 
 @media only screen and (max-width: 540px){
-    .category{
-        margin: 5px 0px !important;
+    .row{
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 960px){
+    .row{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 

@@ -103,4 +103,9 @@
     color: #fff;
     text-decoration: none;
     font-weight: 300;
+    transition: 0.2s linear;
+}
+
+.mini-card-body a:hover{
+    opacity: 0.7;
 }

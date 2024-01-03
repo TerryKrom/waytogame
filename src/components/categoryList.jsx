@@ -33,65 +33,76 @@ const CategoryList = () => {
     return (
         <>
             <div className="category-list">
-                <button
-                    className={`category ${activeButton === "shooter" ? "active" : ""}`}
-                    onClick={() => changeResourceType("shooter")}
-                >
-                    Shooter
-                </button>
+                <div className="row">
+                    <button
+                        className={`category ${activeButton === "shooter" ? "active" : ""}`}
+                        onClick={() => changeResourceType("shooter")}
+                    >
+                        Shooter
+                    </button>
 
-                <button
-                    className={`category ${activeButton === "mmorpg" ? "active" : ""}`}
-                    onClick={() => changeResourceType("mmorpg")}
-                >
-                    MMORPG
-                </button>
+                    <button
+                        className={`category ${activeButton === "mmorpg" ? "active" : ""}`}
+                        onClick={() => changeResourceType("mmorpg")}
+                    >
+                        MMORPG
+                    </button>
 
-                <button
-                    className={`category ${activeButton === "action" ? "active" : ""}`}
-                    onClick={() => changeResourceType("action")}
-                >
-                    Action
-                </button>
+                    <button
+                        className={`category ${activeButton === "action" ? "active" : ""}`}
+                        onClick={() => changeResourceType("action")}
+                    >
+                        Action
+                    </button>
 
-                <button
-                    className={`category ${activeButton === "action-rpg" ? "active" : ""}`}
-                    onClick={() => changeResourceType("action-rpg")}
-                >
-                    Action RPG
-                </button>
+                    <button
+                        className={`category ${activeButton === "action-rpg" ? "active" : ""}`}
+                        onClick={() => changeResourceType("action-rpg")}
+                    >
+                        Action RPG
+                    </button>
 
-                <button
-                    className={`category ${activeButton === "sports" ? "active" : ""}`}
-                    onClick={() => changeResourceType("sports")}
-                >
-                    Sports
-                </button>
+                    <button
+                        className={`category ${activeButton === "sports" ? "active" : ""}`}
+                        onClick={() => changeResourceType("sports")}
+                    >
+                        Sports
+                    </button>
+                </div>
 
-                <button
-                    className={`category ${activeButton === "fantasy" ? "active" : ""}`}
-                    onClick={() => changeResourceType("fantasy")}
-                >
-                    Fantasy
-                </button>
-                <button
-                    className={`category ${activeButton === "strategy" ? "active" : ""}`}
-                    onClick={() => changeResourceType("strategy")}
-                >
-                    Strategy
-                </button>
-                <button
-                    className={`category ${activeButton === "moba" ? "active" : ""}`}
-                    onClick={() => changeResourceType("moba")}
-                >
-                    Moba
-                </button>
-                <button
-                    className={`category ${activeButton === "survival" ? "active" : ""}`}
-                    onClick={() => changeResourceType("survival")}
-                >
-                    Survival
-                </button>
+                <div className="row">
+                    <button
+                        className={`category ${activeButton === "fantasy" ? "active" : ""}`}
+                        onClick={() => changeResourceType("fantasy")}
+                    >
+                        Fantasy
+                    </button>
+                    <button
+                        className={`category ${activeButton === "strategy" ? "active" : ""}`}
+                        onClick={() => changeResourceType("strategy")}
+                    >
+                        Strategy
+                    </button>
+                    <button
+                        className={`category ${activeButton === "moba" ? "active" : ""}`}
+                        onClick={() => changeResourceType("moba")}
+                    >
+                        Moba
+                    </button>
+                    <button
+                        className={`category ${activeButton === "survival" ? "active" : ""}`}
+                        onClick={() => changeResourceType("survival")}
+                    >
+                        Survival
+                    </button>
+                    <button
+                        className={`category ${activeButton === "racing" ? "active" : ""}`}
+                        onClick={() => changeResourceType("racing")}
+                    >
+                        Racing
+                    </button>
+                </div>
+
             </div>
 
             {isLoading ? (
