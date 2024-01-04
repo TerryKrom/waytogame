@@ -41,7 +41,7 @@
 
 .card a{
     text-decoration: none;
-    background-color: var(--secondary-color);
+    background-color: var(--dark-primary-color);
     color: #fff;
     text-align: center;
     width: 175px;
@@ -51,14 +51,14 @@
 }
 
 .card:hover .card-text {
-    animation: appear 0.2s linear forwards; /* Utiliza forwards para manter o estado final após a animação */
+    animation: appearOpacity 0.2s linear forwards; /* Utiliza forwards para manter o estado final após a animação */
 }
 
 .card:not(:hover) .card-text {
     animation: disappear 0.2s linear forwards; /* Animação para o desaparecimento ao sair do hover */
 }
 
-@keyframes appear {
+@keyframes appearOpacity {
     0% {
         opacity: 0;
     }

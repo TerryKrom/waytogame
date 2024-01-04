@@ -1,6 +1,9 @@
 import React from 'react';
 import './miniCard.css';
 
+/**MINI CARD FOR CATEGORIES PAGE */
+
+
 const MiniCard = (props) => {
     return (
         <div className="mini-card">

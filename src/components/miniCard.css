@@ -62,6 +62,7 @@
 .mini-card img {
     width: 95%;
     margin: 10px;
+    border-radius: 5px;
 }
 
 .mini-card-body {

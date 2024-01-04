@@ -24,6 +24,12 @@
     }
 }
 
+@media only screen and (max-width: 420px){
+    .category{
+        margin: 2px;
+    }
+}
+
 @media only screen and (max-width: 960px){
     .row{
         display: flex;

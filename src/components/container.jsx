@@ -14,7 +14,7 @@ const Container = () => {
   }, []);
 
   return (
-    <div className='main-container'>
+    <div className='main-container featured-games'>
       <Title text={'Featured Games'}></Title>
       <GameList games={games}></GameList>
     </div>
