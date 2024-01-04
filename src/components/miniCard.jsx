@@ -15,8 +15,8 @@ const MiniCard = (props) => {
                     <span>{props.game.platform}</span>
                 </p>
                 <p>
-                    <span>Release date: </span>
-                    <span>{props.game.release_date}</span>
+                    <span>Release year: </span>
+                    <span>{props.game.release_date.slice(0, props.game.release_date.indexOf("-"))}</span>
                 </p>
                 <a href={props.game.game_url}>See More</a>
             </div>
