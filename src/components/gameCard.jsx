@@ -11,7 +11,7 @@ const GameCard = ({ game }) => {
                     <p className='platform'>
                         <span>Platform:</span>
                         <span>
-                            {game.platform.includes("(") ? game.platform.slice(0, game.platform.indexOf("(")) : game.platform}
+                            {game.platform}
                         </span>
                     </p>
                     <p>

@@ -6,7 +6,7 @@
     height: 80px;
     background-color: var(--dark-secondary-color);
     position: fixed;
-    z-index: 99;
+    z-index: 99;  
 }
 
 @media only screen and (max-width: 600px){
@@ -53,7 +53,7 @@
   display: block;
   width: 0;
   height: 2px;
-  background: #eee;
+  background: var(--dark-primary-color);
   transition: width .3s;
 }
 
