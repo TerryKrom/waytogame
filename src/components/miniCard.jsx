@@ -7,7 +7,7 @@ import './miniCard.css';
 const MiniCard = (props) => {
     return (
         <div className="mini-card">
-            <img src={props.game.thumbnail} alt="game image" />
+            <img src={props.game.thumbnail} alt="game thumbnail" />
             <div className="mini-card-body">
                 <h2>{props.game.title}</h2>
                 <p>

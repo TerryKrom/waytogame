@@ -31,60 +31,13 @@
     justify-content: flex-end;
     align-items: center;
     flex-direction: column;
-    color: #fff;
+    color: #eee;
     transition: opacity 0.3s, visibility 0s 0.3s; /* Adiciona uma transição suave para a opacidade */
     opacity: 0;
     animation: none; /* Desativa a animação por padrão */
     width: 100%;
     height: 100%;
 }
-
-.card a{
-    text-decoration: none;
-    background-color: var(--dark-primary-color);
-    color: #fff;
-    text-align: center;
-    width: 175px;
-    border-radius: 10px;
-    height: 35px;
-    margin-bottom: 20px;
-}
-
-.card:hover .card-text {
-    animation: appearOpacity 0.2s linear forwards; /* Utiliza forwards para manter o estado final após a animação */
-}
-
-.card:not(:hover) .card-text {
-    animation: disappear 0.2s linear forwards; /* Animação para o desaparecimento ao sair do hover */
-}
-
-@keyframes appearOpacity {
-    0% {
-        opacity: 0;
-    }
-    25% {
-        opacity: 0.25;
-    }
-    50% {
-        opacity: 0.5;
-    }
-    75% {
-        opacity: 0.75;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes disappear {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-
 
 .text-over {
     position: absolute;

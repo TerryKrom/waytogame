@@ -1,5 +1,5 @@
 ::-webkit-scrollbar-thumb {
-    background-color: var(--dark-primary-color);
+    background-color: var(--light-secondary-color);
     border-radius: 5px;
 }
 

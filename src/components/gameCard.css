@@ -37,15 +37,15 @@
 .game-card a {
     text-decoration: none;
     background-color: var(--dark-primary-color);
-    color: #fff;
+    color: #eee;
     text-align: center;
     width: 12rem;
     border-radius: 5px;
     height: 2.25rem;
+    transition: 0.2s linear;
 }
 
-.gamecard a:hover{
-    transition: 0.2s linear;
+.game-card a:hover{
     opacity: 0.7;
 }
 
