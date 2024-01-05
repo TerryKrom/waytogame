@@ -38,7 +38,9 @@ const Footer = () => {
                 </ul>
             </section>
 
-            <section class="bottom">© 2023 Way to Game - Guilherme Avila</section>
+            <section class="bottom">
+                <span>© 2023 Way to Game - Guilherme Avila</span>
+            </section>
         </footer>
     );
 }

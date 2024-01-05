@@ -23,19 +23,19 @@ section.top {
     margin-bottom: 30px;
 }
 
-section.top img {
-    display: block;
-    height: 30px;
-    margin: 0 0 30px;
-}
-
 section.top ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: grid;
-    gap: 30px;
+    gap: 50px;
     grid-template-columns: repeat(2, 1fr);
+}
+
+@media (width > 1160px){
+    section.top ul{
+        gap: 200px;
+    }
 }
 
 @media (width > 480px) {
@@ -71,4 +71,6 @@ section.bottom {
     border-top: 2px solid #eeefff6c;
     color: #eeefff6c;
     font-size: 13px;
+    display: flex;
+    justify-content: space-between;
 }

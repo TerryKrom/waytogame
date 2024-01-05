@@ -6,9 +6,9 @@ import { TailSpin } from 'react-loader-spinner';
 
 
 const CategoryList = () => {
-    const [resourceType, setResourceType] = useState("action");
+    const [resourceType, setResourceType] = useState("shooter");
     const [data, setData] = useState([]);
-    const [activeButton, setActiveButton] = useState("action"); // Novo estado para rastrear o botão ativo
+    const [activeButton, setActiveButton] = useState("shooter"); // Novo estado para rastrear o botão ativo
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
@@ -23,12 +23,15 @@ const CategoryList = () => {
     }, [resourceType]);
 
     const changeResourceType = (type) => {
-        setResourceType(type);
-        setIsLoading(true);
-        setActiveButton(type); // Atualize o botão ativo quando o tipo de recurso for alterado
+        if (type !== resourceType) {
+            setResourceType(type);
+            setIsLoading(true);
+            setActiveButton(type); // Atualize o botão ativo quando o tipo de recurso for alterado
+
+        }
     }
 
-    const limitedData = data.slice(0, 10);
+    const limitedData = data.slice(0, 12);
 
     return (
         <>
