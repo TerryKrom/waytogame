@@ -4,6 +4,10 @@ footer {
     color: #f9f9f9;
 }
 
+footer a{
+    text-decoration: none;
+}
+
 footer section {
     padding: 0 50px;
 }
