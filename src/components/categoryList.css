@@ -27,6 +27,7 @@
 @media only screen and (max-width: 420px){
     .category{
         margin: 2px;
+        width: 9rem;
     }
 }
 
