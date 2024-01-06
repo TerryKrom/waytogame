@@ -19,9 +19,9 @@ const MainAbout = () => {
             </div>
             <div className="about-bottom">
                 <div className="social-icons">
-                    <Link class="fa-brands fa-github" rel='noreferrer' target="_blank" href='https://github.com/terrykrom/way-to-game'></Link>
-                    <Link class="fa-brands fa-linkedin" rel='noreferrer' target="_blank" href='https://linkedin.com/in/guilherme-lopes-avila'></Link>
-                    <Link class="fa-brands fa-instagram" rel='noreferrer' target="_blank" href='https://instagram.com/terrykrom'></Link>
+                    <Link class="fa-brands fa-github" rel='noreferrer' target="_blank" to='https://github.com/terrykrom/way-to-game'></Link>
+                    <Link class="fa-brands fa-linkedin" rel='noreferrer' target="_blank" to='https://linkedin.com/in/guilherme-lopes-avila'></Link>
+                    <Link class="fa-brands fa-instagram" rel='noreferrer' target="_blank" to='https://instagram.com/terrykrom'></Link>
                 </div>
             </div>
         </div>
