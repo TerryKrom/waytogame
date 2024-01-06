@@ -6,6 +6,9 @@ const options = {
   }
 };
 
+/**To avoid code repetition, the "fetchData" function was created.
+ *which receives the url as a parameter just like a normal fetch, but adding the options requested by the API */
+
 export default async function fetchData(url) {
   try {
     const response = await fetch(url, options);

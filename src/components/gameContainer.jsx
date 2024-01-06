@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import GameCard from './gameCard';
-import { TailSpin } from 'react-loader-spinner';
+import Loading from './global/loading';
 
 const GameContainer = ({ game }) => {
   const [isLoading, setIsLoading] = useState(true);
@@ -28,18 +28,7 @@ const GameContainer = ({ game }) => {
     <div>
       {isLoading ? (
         // Se isLoading for verdadeiro, exibe o spinner de carregamento
-        <div align="center" className='loader-container'>
-          <TailSpin
-            height={80}
-            width={80}
-            color="var(--dark-primary-color)"
-            ariaLabel="tail-spin-loading"
-            radius={1}
-            wrapperStyle={{}}
-            wrapperClass=""
-            visible={true}
-          />
-        </div>
+        <Loading></Loading>
       ) : (
         // Quando isLoading for false, exibe o componente GameCard com os dados do jogo
         <div>

@@ -3,9 +3,6 @@ import Card from './card';
 import './gameList.css'
 
 const GameList = ({ games }) => {
-    if (!games) {
-      return <div align="center">Loading...</div>; // ou qualquer outra indicação de carregamento
-    }
     let index = Math.floor(Math.random() * (games.length - 3)); // Subtrai 3 para garantir que haja espaço para 4 jogos consecutivos
 
     return (

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import fetchData from '../fetchApi';
 import './categoryList.css';
 import MiniCard from './miniCard';
-import { TailSpin } from 'react-loader-spinner';
+import Loading from './global/loading';
 
 
 const CategoryList = () => {
@@ -110,18 +110,7 @@ const CategoryList = () => {
 
             {isLoading ? (
                 // Se isLoading for verdadeiro, exibe o spinner de carregamento
-                <div align="center" className='loader-container'>
-                    <TailSpin
-                        height={80}
-                        width={80}
-                        color="var(--dark-primary-color)"
-                        ariaLabel="tail-spin-loading"
-                        radius={1}
-                        wrapperStyle={{}}
-                        wrapperClass=""
-                        visible={true}
-                    />
-                </div>
+                <Loading/>
             ) : (
                 <div className="result">
                     {limitedData.map((game, index) => (
