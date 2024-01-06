@@ -1,5 +1,6 @@
 import React from 'react';
 import './mainAbout.css';
+import { Link } from 'react-router-dom';
 
 const MainAbout = () => {
     return (
@@ -14,9 +15,9 @@ const MainAbout = () => {
             </div>
             <div className="about-bottom">
                 <div className="social-icons">
-                    <a class="fa-brands fa-github" rel='noreferrer' target="_blank" href='https://github.com/terrykrom/way-to-game'></a>
-                    <a class="fa-brands fa-linkedin" rel='noreferrer' target="_blank" href='https://linkedin.com/in/guilherme-lopes-avila'></a>
-                    <a class="fa-brands fa-instagram" rel='noreferrer' target="_blank" href='https://instagram.com/terrykrom'></a>
+                    <Link class="fa-brands fa-github" rel='noreferrer' target="_blank" href='https://github.com/terrykrom/way-to-game'></Link>
+                    <Link class="fa-brands fa-linkedin" rel='noreferrer' target="_blank" href='https://linkedin.com/in/guilherme-lopes-avila'></Link>
+                    <Link class="fa-brands fa-instagram" rel='noreferrer' target="_blank" href='https://instagram.com/terrykrom'></Link>
                 </div>
             </div>
         </div>
