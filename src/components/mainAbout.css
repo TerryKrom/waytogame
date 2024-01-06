@@ -20,18 +20,20 @@
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     width: 100%;
     /* border: 1px solid #Fff; */
 }
 
-.about-header h2{
+.about-container h2{
     font-weight: 400;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .about-container p{
     line-height: 2rem;
+    margin-bottom: 20px;
 }
 
 .about-bottom {
@@ -56,4 +58,17 @@
     font-size: 1.2rem;
     color: #eeefff6c;
     text-decoration: none;
+}
+
+.api-text{
+    color: #eeefff6c;
+    font-size: 0.9rem;
+}
+
+.api-text a{
+    text-decoration: none;
+    color: inherit;
+}
+.api-text p{
+    margin: 0;
 }

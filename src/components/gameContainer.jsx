@@ -10,7 +10,7 @@ const GameContainer = ({ game }) => {
     // Simula uma requisição de dados demorada
     setTimeout(() => {
       try {
-        if (!game || game.length < 4) {
+        if (!game) {
           throw new Error('Dados de jogo inválidos'); // Tratamento de erro
         }
 
