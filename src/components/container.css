@@ -12,6 +12,10 @@
 @media only screen and (max-width:540px){
     .main-container{
         margin: 20px 0px 10px 0px !important;
+        width: 85% !important;
+    }
+    .main-container img{
+        width: 100% !important;
     }
 }
 
