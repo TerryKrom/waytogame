@@ -1,6 +1,8 @@
 import React from 'react';
 import './title.css';
 
+// MAIN TITLE FOR ALL PAGES
+
 const Title = ({ text }) => {
   return (
     <div className="title">

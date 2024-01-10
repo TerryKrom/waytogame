@@ -2,7 +2,7 @@ import fetchData from '../fetchApi';
 import GameList from './gameList';
 import React, { useState, useEffect } from 'react';
 
-
+/** CONTAINER FOR HOME PAGE > POPULAR GAMES */
 const PopularContainer = () => {
     const [games, setGames] = useState([]);
 

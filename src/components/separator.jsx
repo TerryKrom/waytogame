@@ -1,11 +1,11 @@
 import React from 'react';
 import './separator.css';
 
+// SEPARATOR COMPONENT, TO FIX THE HEADER POSITION
+
 const Separator = () => {
     return (  
-        <div className='separator'>
-
-        </div>
+        <div className='separator'></div>
     );
 }
  
