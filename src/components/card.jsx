@@ -4,15 +4,10 @@ import 'atropos/css';
 import Atropos from 'atropos/react'
 import ImageSkeleton from './global/skeleton';
 
+// Card for main gamelist component
+
 const Card = ({ game }) => {
   const [isLoading, setIsLoading] = useState(true);
-  const [img, setImg] = useState(null);
-
-  useEffect(() => {
-    if(game.thumbnail){
-      setImg(game.thumbnail)
-    }
-  },[img])
 
   useEffect(() => {
     setTimeout(() => {

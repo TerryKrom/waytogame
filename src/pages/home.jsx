@@ -6,16 +6,24 @@ import Container from '../components/container';
 import Footer from '../components/footer';
 import ContainerLg from '../components/container-lg';
 import PopularContainer from '../components/popularContainer';
+import DescCardRow from '../components/descCardRow';
 
 const Home = () => {
     return (
         <>
-            <Header></Header>
-            <Separator></Separator>
+            <Header />
+            <Separator />
             <MainGame />
-            <Container></Container>
-            <ContainerLg titleText={"Popular games"} inside={<PopularContainer/>}></ContainerLg>
-            <Footer></Footer>
+            <Container />
+            <ContainerLg
+             titleText={"Popular games"}
+             inside={<PopularContainer />}
+            />
+            <ContainerLg 
+            titleText={"Recomendations"}
+            inside={<DescCardRow />}
+            />
+            <Footer/>
         </>
     );
 }

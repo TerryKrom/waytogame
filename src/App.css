@@ -6,6 +6,7 @@
 /* Estilos para a barra de rolagem */
 ::-webkit-scrollbar {
     width: 0.8rem;
+    background-color: var(--dark-secondary-color);
 }
 
 .separator{
