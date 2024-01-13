@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../components/header';
 import Separator from '../components/separator';
 import ContainerLg from '../components/container-lg';
-import CategorieList from '../components/categoryList';
+import CategoryList from '../components/categoryList';
 import Footer from '../components/footer';
 
 const Categories = () => {
@@ -10,7 +10,7 @@ const Categories = () => {
         <>
             <Header></Header>
             <Separator></Separator>
-            <ContainerLg titleText={"Categories"} inside={<CategorieList/>}></ContainerLg>
+            <ContainerLg titleText={"Categories"} inside={<CategoryList/>}></ContainerLg>
             <Footer></Footer>
         </>  
     );

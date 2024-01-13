@@ -5,6 +5,7 @@
   --light-primary-color: #6196ff;
   --dark-primary-color: #004aac;
   --secondary-color: #151d27;
+  --alt-secondary-color: #17202b;
   --light-secondary-color: #384558;
   --dark-secondary-color: #121920;
   --dark-font: #eeefff6c;
@@ -22,7 +23,7 @@ html {
 }
 
 body {
-  background: var(--secondary-color);
+  background: var(--alt-secondary-color);
   color: #eee;
   overflow-x: hidden;
 }

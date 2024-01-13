@@ -23,16 +23,16 @@ const MainGame = () => {
 
   return (
     <>
-      <div className="row">
-        <div className='main-container' style={{ width: 407 + 'px' , margin: 38 + 'px'}}>
+      <div className="row main-game">
+        <div className='main-container'>
           <Title text={'Game of the Week'}></Title>
           <GameContainer game={gameData}></GameContainer>
         </div>
-        <div className='main-container' style={{ width: 407 + 'px' , margin: 38 + 'px'}}>
+        <div className='main-container'>
           <Title text={'Game of the Week'}></Title>
           <GameContainer game={gameDataBrowser}></GameContainer>
         </div>
-        <div className='main-container' style={{ width: 407 + 'px' , margin: 38 + 'px'}}>
+        <div className='main-container'>
           <Title text={'Game of the Week'}></Title>
           <GameContainer game={gameData}></GameContainer>
         </div>

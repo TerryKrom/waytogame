@@ -8,3 +8,13 @@
 .title{
     width: 90%;
 }
+
+.main-game .main-container{
+    width: 407px;
+    margin: 30px 30px 10px 30px;    
+}
+
+/* 
+.main-game .main-container:nth-child(3){
+    display: none !important;
+} */

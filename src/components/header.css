@@ -33,6 +33,14 @@
 
 .nav-menu img{
     width: 80px;
+    transition: 0.3s linear;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.nav-menu img:hover{
+  transform: translateY(-3px);
+  filter: drop-shadow(0 0 0.75rem var(--dark-font));
 }
 
 .logo{
