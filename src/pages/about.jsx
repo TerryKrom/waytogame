@@ -10,7 +10,7 @@ const About = () => {
         <>
             <Header></Header>
             <Separator></Separator>
-            <ContainerLg titleText={"About"} inside={<MainAbout/>}></ContainerLg>
+            <ContainerLg titleText={"About"} inside={<MainAbout/>}/>
             <Footer></Footer>
         </>
     );

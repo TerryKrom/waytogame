@@ -12,6 +12,8 @@ const MainAbout = () => {
             <div className="about-center">
                 <h2>Our mission</h2>
                 <p>At Way to Game, we're on a mission to redefine the gaming experience. No more compromising on the quality of your gaming adventures or resorting to piracy. Our carefully curated selection of free-to-play games ensures that you can dive into thrilling virtual worlds without spending a fortune. Discover a treasure trove of entertainment that proves you don't need to break the bank to have an amazing gaming experience. Join us on the journey where every gamer, regardless of budget, can enjoy the best that the gaming world has to offer.</p>
+                <h3>Developer:</h3>
+                <p>This website was developed by Guilherme Avila.</p>
                 <div className="api-text">
                     <p>This project was made using </p>
                     <Link to="https://freetogame.com">Free To Game API &copy;</Link>

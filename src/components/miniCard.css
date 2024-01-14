@@ -48,6 +48,14 @@
     animation-delay: 2s;
 }
 
+.mini-card:nth-child(11) {
+    animation-delay: 2.2s;
+}
+
+.mini-card:nth-child(12) {
+    animation-delay: 2.4s;
+}
+
 @keyframes appear {
     from {
         transform: translateX(-100px);

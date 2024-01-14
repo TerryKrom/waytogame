@@ -71,6 +71,12 @@ const CategoryList = () => {
                     >
                         Sports
                     </button>
+                    <button
+                        className={`category ${activeButton === "fighting" ? "active" : ""}`}
+                        onClick={() => changeResourceType("fighting")}
+                    >
+                        Fight
+                    </button>
                 </div>
 
                 <div className="row">
@@ -104,6 +110,13 @@ const CategoryList = () => {
                     >
                         Racing
                     </button>
+                    <button
+                        className={`category ${activeButton === "anime" ? "active" : ""}`}
+                        onClick={() => changeResourceType("anime")}
+                    >
+                        Anime
+                    </button>
+                    
                 </div>
 
             </div>

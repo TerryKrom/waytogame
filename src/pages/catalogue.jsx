@@ -9,9 +9,8 @@ const Catalogue = () => {
         <>
             <Header></Header>
             <Separator></Separator>
-            <ContainerLg titleText={'Catalogue'} inside={<>
-            <br />
-                <h2 align="center">Coming soon!</h2>
+            <ContainerLg titleText={'Catalogue'}
+            inside={<><br /> <h2 align="center">Coming soon!</h2>
             </>}></ContainerLg>
             <Footer></Footer>
         </>
