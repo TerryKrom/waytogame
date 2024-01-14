@@ -1,20 +1,15 @@
-import React, { useState, useEffect } from 'react';
-import fetchData from '../fetchApi';
+import React from 'react';
 import DescCard from './descCard';
 import './descCardRow.css'
+import { usePopularGames } from '../data';
 
 const DescCardRow = () => {
-    const [games, setGames] = useState([]);
-
-    useEffect(() => {
-        fetchData('https://free-to-play-games-database.p.rapidapi.com/api/games?platform=all&sort-by=popularity')
-            .then(result => setGames(result.slice(1, 5)))
-            .catch(error => console.error('Error:', error));
-    }, []);
+    const popularGames = usePopularGames();
+    const limitedPopularGames = popularGames?.slice(0,4);
 
     return (
         <div className='desc-card-row'>
-            {games.map((game, index) => (
+            {limitedPopularGames?.map((game, index) => (
                 <DescCard key={index} game={game}/>
             ))}
         </div>

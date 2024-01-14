@@ -13,17 +13,22 @@ const Home = () => {
         <>
             <Header />
             <Separator />
-            <MainGame />
+            <MainGame
+                type={"pc"} 
+            />
             <Container />
+            <MainGame 
+                type={"browser"} 
+            />
             <ContainerLg
-             titleText={"Popular games"}
-             inside={<PopularContainer />}
+                titleText={"Popular games"}
+                inside={<PopularContainer />}
             />
-            <ContainerLg 
-            titleText={"Recomendations"}
-            inside={<DescCardRow />}
+            <ContainerLg
+                titleText={"Recomendations"}
+                inside={<DescCardRow />}
             />
-            <Footer/>
+            <Footer />
         </>
     );
 }

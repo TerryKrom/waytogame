@@ -1,40 +1,29 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Title from './title';
 import './container.css';
 import './mainGame.css';
 import GameContainer from './gameContainer';
-import fetchData from '../fetchApi'; // Import the fetchData function
+import { useBrowserGames, usePcGames } from '../data';
 
-const MainGame = () => {
-  const [gameData, setGameData] = useState(null);
-  const [gameDataBrowser, setGameDataBrowser] = useState(null);
+const MainGame = ( {type} ) => {
+  const pcGames = usePcGames();
+  const browserGames = useBrowserGames();
 
-  useEffect(() => {
-    fetchData('https://free-to-play-games-database.p.rapidapi.com/api/games?platform=pc')
-      .then(result => setGameData(result))
-      .catch(error => console.error('Error:', error));
-  }, []);
-
-  useEffect(() => {
-    fetchData('https://free-to-play-games-database.p.rapidapi.com/api/games?platform=browser')
-      .then(result => setGameDataBrowser(result))
-      .catch(error => console.error('Error:', error));
-  }, []);
+  const types = {
+    "pc": pcGames,
+    "browser": browserGames,
+  }
 
   return (
     <>
       <div className="row main-game">
         <div className='main-container'>
           <Title text={'Game of the Week'}></Title>
-          <GameContainer game={gameData}></GameContainer>
+          <GameContainer game={types[type] || []}></GameContainer>
         </div>
         <div className='main-container'>
           <Title text={'Game of the Week'}></Title>
-          <GameContainer game={gameDataBrowser}></GameContainer>
-        </div>
-        <div className='main-container'>
-          <Title text={'Game of the Week'}></Title>
-          <GameContainer game={gameData}></GameContainer>
+          <GameContainer game={types[type] || []}></GameContainer>
         </div>
       </div>
     </>

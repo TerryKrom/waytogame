@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import fetchData from '../fetchApi';
 import './categoryList.css';
-import MiniCard from './miniCard';
 import Loading from './global/loading';
+import MiniCardRow from './miniCardRow';
 
 
 const CategoryList = () => {
@@ -125,15 +125,7 @@ const CategoryList = () => {
                 // Se isLoading for verdadeiro, exibe o spinner de carregamento
                 <Loading/>
             ) : (
-                <div className="result">
-                    {limitedData.map((game, index) => (
-                        <MiniCard
-                            key={index}
-                            game={game}
-                        />
-                    ))}
-                </div>
-
+                <MiniCardRow data={limitedData}/>
             )}
         </>
     );

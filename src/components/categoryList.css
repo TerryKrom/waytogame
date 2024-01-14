@@ -44,7 +44,7 @@
     color: var(--light-primary-color);
 }
 
-.result{
+.mini-card-row{
     margin: 20px auto;
     display: flex;
     align-items: center;

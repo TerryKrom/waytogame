@@ -10,7 +10,7 @@ const Categories = () => {
         <>
             <Header></Header>
             <Separator></Separator>
-            <ContainerLg titleText={"Categories"} inside={<CategoryList/>}></ContainerLg>
+            <ContainerLg titleText={"Choose a Category"} inside={<CategoryList/>}></ContainerLg>
             <Footer></Footer>
         </>  
     );
