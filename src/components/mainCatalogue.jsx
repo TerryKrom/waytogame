@@ -4,7 +4,7 @@ import './mainCatalogue.css';
 
 const MainCatalogue = ({ data, itemsPerPage }) => {
     const [currentPage, setCurrentPage] = useState(1);
-
+    
     // Calcula o índice inicial e final dos itens a serem exibidos na página atual
     const indexOfLastItem = currentPage * itemsPerPage;
     const indexOfFirstItem = indexOfLastItem - itemsPerPage;

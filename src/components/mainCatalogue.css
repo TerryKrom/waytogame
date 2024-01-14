@@ -1,4 +1,4 @@
-.page-controls{
+.page-controls {
     margin: 20px auto;
     /* border: 1px solid #fff; */
     width: 75%;
@@ -8,7 +8,7 @@
     align-items: center;
 }
 
-.page-controls button{
+.page-controls button {
     cursor: pointer;
     background-color: var(--secondary-color);
     color: #fff;
@@ -18,15 +18,27 @@
     padding: 0px 10px 0px 10px;
 }
 
-.page-controls button:nth-child(1){
+@media only screen and (max-width: 920px) {
+    .page-controls button:not(.fa){
+        display: none;
+    }
+}
+
+.page-controls button:nth-child(1) {
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
 
-button:disabled, button:hover{
+.page-controls button:last-child{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+button:disabled,
+button:hover {
     background-color: var(--light-secondary-color);
 }
 
-button:disabled{
+button:disabled {
     cursor: default;
 }
