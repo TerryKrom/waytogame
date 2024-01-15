@@ -53,7 +53,7 @@ const useAzGames = () => {
   const [azGames, setAzGames] = useState(null);
   
   useEffect(() => {
-    fetchData('https://free-to-play-games-database.p.rapidapi.com/api/games?platform=all&sort-by=popularity')
+    fetchData('https://free-to-play-games-database.p.rapidapi.com/api/games?sort-by=alphabetical')
       .then(result => setAzGames(result))
       .catch(error => console.error('Error:', error));
   }, []);

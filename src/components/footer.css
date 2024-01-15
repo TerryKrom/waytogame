@@ -57,6 +57,10 @@ section.top ul li a {
     color: #eeefffe6;
 }
 
+section.top ul li a:hover{
+    color: #eeefff6c;
+}
+
 section.top h3 {
     color: #bababa;
     font-weight: 400;

@@ -18,6 +18,10 @@
     padding: 0px 10px 0px 10px;
 }
 
+.catalogue-list .mini-card{
+    animation-delay: 0s !important;
+}
+
 @media only screen and (max-width: 920px) {
     .page-controls button:not(.fa){
         display: none;
@@ -41,4 +45,39 @@ button:hover {
 
 button:disabled {
     cursor: default;
+}
+
+
+.filters{
+    margin: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.filters h2{
+    font-weight: 400;
+}
+
+.filters select{
+    margin: 3px 20px 0px 20px;
+    width: 10rem;
+    height: 2rem;
+    border-radius: 5px;
+    background-color: var(--light-secondary-color);
+    border: none;
+    color: #fff;
+    outline: 0;
+    cursor: pointer;
+    appearance: none;
+}
+
+/* Estilizando a seta do Select */
+select::after {
+    background-color: #fff;
+    color: #fff;
+}
+
+option{
+    padding: 10px !important;
 }

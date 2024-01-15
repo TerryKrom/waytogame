@@ -6,7 +6,7 @@ import Footer from '../components/footer';
 // import SearchContainer from '../components/searchContainer';
 // import DescCardRow from '../components/descCardRow';
 import MainCatalogue from '../components/mainCatalogue.jsx';
-import useAzGames from '../data.jsx';
+import { useAzGames } from '../data.jsx';
 
 const Catalogue = () => {
     const azGames = useAzGames();
