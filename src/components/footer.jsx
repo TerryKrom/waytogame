@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
     return (
         <footer>
+            <div className="footer-main">
+
             <section class="top">
                 <ul>
                     <li>
@@ -37,6 +39,8 @@ const Footer = () => {
             <section class="bottom">
                 <span>© 2023 Way to Game - Guilherme Avila</span>
             </section>
+            </div>
+            
         </footer>
     );
 }

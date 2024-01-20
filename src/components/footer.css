@@ -8,6 +8,11 @@ footer a{
     text-decoration: none;
 }
 
+.footer-main{
+    max-width: 1200px;
+    margin: auto;
+}
+
 footer section {
     padding: 0 50px;
 }

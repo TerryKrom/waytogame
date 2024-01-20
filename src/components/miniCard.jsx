@@ -5,11 +5,20 @@ import './miniCard.css';
 
 
 const MiniCard = (props) => {
+
+    const filterTitle = (title) => {
+        if(title.length > 30){
+            return title.slice(0,30)
+        }else{
+            return title
+        }
+    }
+
     return (
         <div className="mini-card">
             <img src={props.game.thumbnail} alt="game thumbnail" />
             <div className="mini-card-body">
-                <h2>{props.game.title}</h2>
+                <h2>{filterTitle(props.game.title)}</h2>
                 <p>
                     <span> Platform: </span>
                     <span>{props.game.platform}</span>
