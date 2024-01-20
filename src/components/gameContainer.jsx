@@ -14,7 +14,7 @@ const GameContainer = ({ game }) => {
           throw new Error('Dados de jogo inválidos'); // Tratamento de erro
         }
 
-        let index = Math.floor(Math.random() * (game.length - 3));
+        let index = Math.floor(Math.random() * 50);
         setGameData(game[index]); // Define os dados do jogo
         setIsLoading(false); // Define isLoading como false
       } catch (error) {
