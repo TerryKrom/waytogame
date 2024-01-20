@@ -17,6 +17,10 @@ const Home = () => {
                 type={"pc"} 
             />
             <Container />
+            <ContainerLg
+                titleText={"Recomendations"}
+                inside={<DescCardRow start={0}/>}
+            />
             <MainGame 
                 type={"browser"} 
             />
@@ -26,7 +30,7 @@ const Home = () => {
             />
             <ContainerLg
                 titleText={"Recomendations"}
-                inside={<DescCardRow />}
+                inside={<DescCardRow start={5}/>}
             />
             <Footer />
         </>

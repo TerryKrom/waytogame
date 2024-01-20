@@ -3,9 +3,9 @@ import DescCard from './descCard';
 import './descCardRow.css'
 import { usePopularGames } from '../data';
 
-const DescCardRow = () => {
+const DescCardRow = ({start}) => {
     const popularGames = usePopularGames();
-    const limitedPopularGames = popularGames?.slice(0,4);
+    const limitedPopularGames = popularGames?.slice(start, start + 4);
 
     return (
         <div className='desc-card-row'>
