@@ -47,37 +47,74 @@ button:disabled {
     cursor: default;
 }
 
-
 .filters{
     margin: 20px;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .filters h2{
     font-weight: 400;
 }
 
-.filters select{
-    margin: 3px 20px 0px 20px;
-    width: 10rem;
-    height: 2rem;
-    border-radius: 5px;
-    background-color: var(--light-secondary-color);
-    border: none;
-    color: #fff;
-    outline: 0;
+.select{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--alt-secondary-color);
+    position: relative;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.select-button{
+    width: 16rem;
+    display: flex;
     cursor: pointer;
-    appearance: none;
-}
-
-/* Estilizando a seta do Select */
-select::after {
-    background-color: #fff;
+    height: 2.5rem;
     color: #fff;
+    border: none;
+    font-size: 1rem;
+    text-indent: 10px;
+    background-color: var(--alt-secondary-color);
+    align-items: center;
+    justify-content: space-between;
 }
 
-option{
-    padding: 10px !important;
+.select-button span:nth-child(2){
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.select-button:hover{
+    background-color: inherit;
+}
+
+.select-option{
+    cursor: pointer;
+    padding: 7px 0px 5px 0px;
+    border: 2px solid var(--alt-secondary-color);
+    text-indent: 8px;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 2.5rem;
+    width: 100%;
+}
+
+.select-option.selected{
+    border: 2px solid var(--primary-color);
+}
+
+.optgroup{
+    position: absolute;
+    margin-top: 2.5rem;
+    z-index: 99;
+    background-color: var(--alt-secondary-color);
+    width: 100%;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.select-option:hover{
+    border: 2px solid var(--primary-color);
 }

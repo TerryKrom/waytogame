@@ -5,6 +5,8 @@ import './mainCatalogue.css';
 const MainCatalogue = ({ data }) => {
     const [currentPage, setCurrentPage] = useState(1);
     const [itemsPerPage, setItemsPerPage] = useState(21);
+    const [selectedItem, setSelectedItem] = useState(21);
+    const [isOpen, setIsOpen] = useState(false);
 
     // Calcula o índice inicial e final dos itens a serem exibidos na página atual
     const indexOfLastItem = currentPage * itemsPerPage;
@@ -18,24 +20,44 @@ const MainCatalogue = ({ data }) => {
         setCurrentPage(newPage);
     };
 
-    const handleItemsChange = (e) => {
-        setItemsPerPage(parseInt(e.target.value, 10));
-    }
-
     useEffect(() => {
         window.scrollTo(0, 0);
-    }, [currentPage])
+    }, [currentPage]);
+
+    const handleItemsChange = (e) => {
+        setItemsPerPage(parseInt(e, 10));
+        setSelectedItem(parseInt(e, 10));
+        handleDropDown();
+    };
+
+    const handleDropDown = () => {
+        setIsOpen(!isOpen);
+    };
 
     return (
         <div className='catalogue-list'>
             <div className="filters">
-                <h2>Showing: </h2>
-                <select name="itemsPerPage" id="" value={itemsPerPage} onChange={(e) => handleItemsChange(e)}>
-                    <option value="21">21</option>
-                    <option value="30">30</option>
-                    <option value="45">45</option>
-                    <option value="60">60</option>
-                </select>
+                <div className="select">
+                    <button className="select-button" onClick={() => handleDropDown()}>
+                        <span>{selectedItem} Items per page</span>
+                        <span className={isOpen ? "fa-solid fa-caret-up" : "fa-solid fa-caret-down"}></span>
+                    </button>
+                    {isOpen ? (
+                        <div className="optgroup">
+                            {[21, 30, 45, 60].map((option) => (
+                                <div
+                                    key={option}
+                                    className={`select-option ${option === selectedItem ? 'selected' : ''}`}
+                                    onClick={() => handleItemsChange(option)}
+                                >
+                                    {option}
+                                </div>
+                            ))}
+                        </div>
+                    ) : (
+                        <></>
+                    )}
+                </div>
             </div>
 
             {/* Renderiza os itens da página atual */}
@@ -43,16 +65,28 @@ const MainCatalogue = ({ data }) => {
 
             {/* Adiciona controles de paginação */}
             <div className='page-controls'>
-                <button className='fa fa-arrow-left' onClick={() => handlePageChange(currentPage - 1)} disabled={currentPage === 1} />
-
+                <button
+                    className='fa fa-arrow-left'
+                    onClick={() => handlePageChange(currentPage - 1)}
+                    disabled={currentPage === 1}
+                />
                 {/* Renderiza os números das páginas */}
                 {Array.from({ length: totalPages }, (_, index) => (
-                    <button key={index} onClick={() => { handlePageChange(index + 1) }} disabled={currentPage === index + 1}>
+                    <button
+                        key={index}
+                        onClick={() => {
+                            handlePageChange(index + 1);
+                        }}
+                        disabled={currentPage === index + 1}
+                    >
                         {index + 1}
                     </button>
                 ))}
-
-                <button className='fa fa-arrow-right' onClick={() => handlePageChange(currentPage + 1)} disabled={currentPage === totalPages} />
+                <button
+                    className='fa fa-arrow-right'
+                    onClick={() => handlePageChange(currentPage + 1)}
+                    disabled={currentPage === totalPages}
+                />
             </div>
             <br />
         </div>
