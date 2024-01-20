@@ -26,6 +26,10 @@
     .page-controls button:not(.fa){
         display: none;
     }
+    .page-controls{
+        /* border: 1px solid #fff; */
+        width: 80%;
+    }
 }
 
 .page-controls button:nth-child(1) {
@@ -50,7 +54,7 @@ button:disabled {
 .filters{
     margin: 20px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: flex-start;
 }
 
@@ -79,6 +83,15 @@ button:disabled {
     background-color: var(--alt-secondary-color);
     align-items: center;
     justify-content: space-between;
+}
+
+@media only screen and (max-width: 720px){
+    .select-button{
+        width: 12rem;
+    }
+    .page-count{
+        display: flex !important;
+    }
 }
 
 .select-button span:nth-child(2){
@@ -117,4 +130,13 @@ button:disabled {
 
 .select-option:hover{
     border: 2px solid var(--primary-color);
+}
+
+.page-count{
+    background-color: var(--alt-secondary-color);
+    width: 5rem;
+    height: 2.5rem;
+    display: none;
+    justify-content: space-around;
+    align-items: center;
 }

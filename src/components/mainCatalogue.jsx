@@ -58,6 +58,10 @@ const MainCatalogue = ({ data }) => {
                         <></>
                     )}
                 </div>
+                <div className="page-count">
+                    <span className="fa-solid fa-thumbtack"></span> 
+                    <span>{currentPage}</span>
+                </div>
             </div>
 
             {/* Renderiza os itens da página atual */}
