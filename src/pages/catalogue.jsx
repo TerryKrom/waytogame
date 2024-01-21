@@ -1,10 +1,7 @@
 import React from 'react';
 import Header from '../components/header';
-import Separator from '../components/separator';
 import ContainerLg from '../components/container-lg';
 import Footer from '../components/footer';
-// import SearchContainer from '../components/searchContainer';
-// import DescCardRow from '../components/descCardRow';
 import MainCatalogue from '../components/mainCatalogue.jsx';
 import { useAzGames } from '../data.jsx';
 import ScrollToTopButton from '../components/global/scrollBtn.jsx';
@@ -14,13 +11,12 @@ const Catalogue = () => {
 
     return (
         <>
-            <Header></Header>
-            <Separator></Separator>
+            <Header/>
             <ContainerLg
                 titleText={"Games from A - Z"}
                 inside={<MainCatalogue data={azGames || []} itemsPerPage={21} />}
             />
-            <Footer></Footer>
+            <Footer/>
             <ScrollToTopButton/>
         </>
     );

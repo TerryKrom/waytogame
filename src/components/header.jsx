@@ -1,6 +1,7 @@
 import React from 'react';
 import './header.css'
 import { Link, useLocation } from 'react-router-dom';
+import Separator from './separator';
 
 const Header = () => {
 
@@ -50,6 +51,7 @@ const Header = () => {
           Contact Us
         </Link>
       </div>
+      <Separator/>
     </>
   );
 };
