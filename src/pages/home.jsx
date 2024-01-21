@@ -7,6 +7,7 @@ import Footer from '../components/footer';
 import ContainerLg from '../components/container-lg';
 import PopularContainer from '../components/popularContainer';
 import DescCardRow from '../components/descCardRow';
+import ScrollToTopButton from '../components/global/scrollBtn';
 
 const Home = () => {
     return (
@@ -33,6 +34,7 @@ const Home = () => {
                 inside={<DescCardRow start={5}/>}
             />
             <Footer />
+            <ScrollToTopButton/>
         </>
     );
 }

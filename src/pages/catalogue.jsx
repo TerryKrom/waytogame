@@ -7,6 +7,7 @@ import Footer from '../components/footer';
 // import DescCardRow from '../components/descCardRow';
 import MainCatalogue from '../components/mainCatalogue.jsx';
 import { useAzGames } from '../data.jsx';
+import ScrollToTopButton from '../components/global/scrollBtn.jsx';
 
 const Catalogue = () => {
     const azGames = useAzGames();
@@ -20,6 +21,7 @@ const Catalogue = () => {
                 inside={<MainCatalogue data={azGames || []} itemsPerPage={21} />}
             />
             <Footer></Footer>
+            <ScrollToTopButton/>
         </>
     );
 }
