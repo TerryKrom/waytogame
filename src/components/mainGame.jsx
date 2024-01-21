@@ -25,6 +25,10 @@ const MainGame = ( {type} ) => {
           <Title text={'Game of the Week'}></Title>
           <GameContainer game={types[type] || []}></GameContainer>
         </div>
+        <div className='main-container'>
+          <Title text={'Game of the Week'}></Title>
+          <GameContainer game={types[type] || []}></GameContainer>
+        </div>
       </div>
     </>
   );
