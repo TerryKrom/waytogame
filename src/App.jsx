@@ -6,6 +6,8 @@ import Home from './pages/home';
 import Categories from './pages/categories';
 import Catalogue from './pages/catalogue';
 import About from './pages/about';
+import CookiePolicy from './pages/cookiePolicy';
+import Contact from './pages/contact';
 
 function App() {
   return(
@@ -15,6 +17,9 @@ function App() {
         <Route path="/about" element={<About/>} />
         <Route path="/categories" element={<Categories/>} />
         <Route path="/catalogue" element={<Catalogue/>} />
+        <Route path="/cookie-policy" element={<CookiePolicy/>} />
+        <Route path="/contact" element={<Contact/>} />
+      
       </Routes>
     </Router>
   )

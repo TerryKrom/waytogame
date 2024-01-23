@@ -41,12 +41,12 @@ const Header = () => {
       </header>
       <div className="subheader">
         <Link
-          to="/"
-          className={location.pathname === '/cookies' ? 'active' : ''}>
+          to="/cookie-policy"
+          className={location.pathname === '/cookie-policy' ? 'active' : ''}>
           Cookie Policy
         </Link>
         <Link
-          to="/"
+          to="/contact"
           className={location.pathname === '/contact' ? 'active' : ''}>
           Contact Us
         </Link>
