@@ -5,7 +5,7 @@ const DescCard = ({ game }) => {
     return (
         <>
             <div className="desc-card">
-                <img src={game.thumbnail} alt={game.title} />
+                <img src={game.thumbnail} alt={game.title}/>
                 <div className="desc-card-text">
                     <h2>{game.title}</h2>
                     <p className='details'>

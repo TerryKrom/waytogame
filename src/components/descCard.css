@@ -53,7 +53,7 @@
 @media only screen and (max-width: 760px){
     .desc-card img{
         max-width: none;
-        width: 95%;
+        width: 90%;
     }
     .desc-card-text h2{
         margin: auto;    

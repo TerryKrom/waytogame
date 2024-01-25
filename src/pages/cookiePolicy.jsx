@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../components/header';
 import ContainerLg from '../components/container-lg';
 import Footer from '../components/footer';
+import MainCookies from '../components/mainCookies';
 
 const CookiePolicy = () => {
     return (
@@ -9,7 +10,7 @@ const CookiePolicy = () => {
             <Header />
             <ContainerLg
                 titleText={"Cookie Policy"}
-                inside={<h2>Cookies</h2>}
+                inside={<MainCookies/>}
             />
             <Footer />
         </>
