@@ -30,11 +30,11 @@ const EmailContainer = () => {
     <div className="email-container">
       <h2>Leave your message here!</h2>
       <div className="input-subject">
-        <span>Title:</span>
+        <span>Title</span>
         <input type="text" onChange={(e) => handleSubject(e)} placeholder='Email Subject'/>
       </div>
       <div className="input-subject">
-        <span>Your Message:</span>
+        <span>Message</span>
         <textarea onChange={(e) => handleBody(e)} placeholder='Leave your message here!'/>
       </div>
       <button onClick={handleClick}>Send Email</button>

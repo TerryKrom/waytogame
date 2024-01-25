@@ -4,13 +4,13 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    height: auto;
 }
+
 
 .left-column{
     flex: 1;
     min-width: 300px;
-    min-height: 284px;
+    height: 25rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -22,5 +22,5 @@
 }
 
 .left-column img{
-    width: 100px;
+    width: 10rem;
 }
