@@ -12,6 +12,18 @@
     animation: appear 0.3s linear forwards;
 }
 
+@media only screen and (max-width: 720px){
+    .mini-card {
+        width: 275px !important;
+    }
+}
+
+@media only screen and (max-width: 680px){
+    .mini-card {
+        width: 325px !important;
+    }
+}
+
 .mini-card:nth-child(2) {
     animation-delay: 0.3s;
 }
