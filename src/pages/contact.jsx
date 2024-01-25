@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../components/header';
 import ContainerLg from '../components/container-lg';
 import Footer from '../components/footer';
+import MainContact from '../components/mainContact';
 
 const Contact = () => {
     return (  
@@ -9,7 +10,7 @@ const Contact = () => {
             <Header/>
             <ContainerLg 
             titleText={"Contact Us"}
-            inside={<h2>Contact us</h2>}
+            inside={<MainContact/>}
             />
             <Footer/>
         </>

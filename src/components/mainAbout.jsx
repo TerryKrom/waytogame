@@ -1,6 +1,7 @@
 import React from 'react';
 import './mainAbout.css';
 import { Link } from 'react-router-dom';
+import SocialIcons from './global/socialIcons';
 
 const MainAbout = () => {
     return (
@@ -23,11 +24,7 @@ const MainAbout = () => {
                 </div>
             </div>
             <div className="text-bottom">
-                <div className="social-icons">
-                    <Link class="fa-brands fa-github" rel='noreferrer' target="_blank" to='https://github.com/terrykrom/way-to-game'></Link>
-                    <Link class="fa-brands fa-linkedin" rel='noreferrer' target="_blank" to='https://linkedin.com/in/guilherme-lopes-avila'></Link>
-                    <Link class="fa-brands fa-instagram" rel='noreferrer' target="_blank" to='https://instagram.com/terrykrom'></Link>
-                </div>
+                <SocialIcons/>
             </div>
         </div>
     );
