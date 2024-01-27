@@ -41,7 +41,6 @@ textarea{
     padding: 5px;
 }
 
-
 .email-container button{
     margin: 10px auto;
     display: flex;
@@ -58,5 +57,5 @@ textarea{
 
 .email-container input{
     text-indent: 5px;
-    height: 1.8rem;
+    height: 2rem;
 }
