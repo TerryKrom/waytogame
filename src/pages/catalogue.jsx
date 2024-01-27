@@ -5,6 +5,7 @@ import Footer from '../components/footer';
 import MainCatalogue from '../components/mainCatalogue.jsx';
 import { useAzGames } from '../data.jsx';
 import ScrollToTopButton from '../components/global/scrollBtn.jsx';
+import CookiesContainer from '../components/global/cookies';
 
 const Catalogue = () => {
     const azGames = useAzGames();
@@ -18,6 +19,7 @@ const Catalogue = () => {
             />
             <Footer/>
             <ScrollToTopButton/>
+            <CookiesContainer/>
         </>
     );
 }

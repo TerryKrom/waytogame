@@ -7,6 +7,7 @@ import ContainerLg from '../components/container-lg';
 import PopularContainer from '../components/popularContainer';
 import DescCardRow from '../components/descCardRow';
 import ScrollToTopButton from '../components/global/scrollBtn';
+import CookiesContainer from '../components/global/cookies';
 
 const Home = () => {
     return (
@@ -33,6 +34,7 @@ const Home = () => {
             />
             <Footer />
             <ScrollToTopButton/>
+            <CookiesContainer/>
         </>
     );
 }
