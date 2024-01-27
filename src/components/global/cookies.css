@@ -25,6 +25,26 @@
     font-size: 0.9rem;
 }
 
+@media only screen and (max-width: 720px){
+    .cookies-opt{
+        display: none;
+    }
+    .cookies-container{
+        height: 70px;
+    }
+    .cookies-container button, .cookies-container a{
+        margin: 5px;
+        font-size: 0.7rem;
+    }
+    /* .cookies-container a{
+        
+    } */
+    .cookies-container p{
+        margin: 5px 0px 5px 5px;
+        font-size: 0.8rem;
+    }
+}
+
 .cookies-container button{
     color: #fff;
     background-color: var(--dark-primary-color);

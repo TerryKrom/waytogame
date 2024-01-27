@@ -25,7 +25,7 @@ const CookiesContainer = () => {
 
     return (
         <div className={`cookies-container ${isActive ? 'active' : ''}`}>
-            <p>This website uses cookies to enhance your browsing experience. By continuing to use our site, you agree to the use of cookies!
+            <p>This website uses cookies to enhance your browsing experience! <span className='cookies-opt'>By continuing to use our site, you agree to the use of cookies.</span>
             </p>
             <Link to='/cookie-policy'>Cookie Policy</Link>
             <button onClick={handleAcceptCookies}>Allow Cookies</button>
