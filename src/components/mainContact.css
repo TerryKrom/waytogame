@@ -7,7 +7,7 @@
 }
 
 
-.left-column{
+.right-column{
     flex: 1;
     min-width: 300px;
     height: 25rem;
@@ -15,12 +15,17 @@
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
+    border: 1px solid #fff;
 }
 
-.left-column h2{
+.right-column h2{
     font-weight: 400;
 }
 
-.left-column img{
+.right-column img{
     width: 10rem;
+}
+
+.right-column .social-icons{
+    margin-bottom: 30px;
 }
